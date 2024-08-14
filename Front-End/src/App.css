@@ -1,0 +1,83 @@
+body{
+  margin :0;
+  padding: 0;
+  height: 100vh;
+  background-image: url('./images/Background.jpg'); /* Reemplaza con la ruta de tu imagen */
+  background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+  background-position: center; /* Centra la imagen en el contenedor */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  display: flex;
+
+}
+
+.Formulario {
+  font-family: 'Roboto', sans-serif; /* Fuente para el texto */
+  display: flex; /* Usa flexbox para organizar los elementos */
+  justify-content: center; /* Centra el formulario horizontalmente */
+  padding: 30px; /* Espaciado interno del formulario */
+  align-items: center; /* Centra el formulario verticalmente */
+  height: 100vh; /* Ocupa toda la altura de la ventana del navegador */
+  box-sizing: border-box; /* Incluye padding y border en el cálculo del ancho y alto */
+}
+
+/* Estilo del título del formulario */
+.Titulo {
+  text-align: center; /* Centra el texto del título */
+  margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+/* Estilo para los campos de entrada de texto y contraseña dentro de .Formulario */
+.Formulario input[type="text"],
+.Formulario input[type="password"] {
+  width: 100%; /* Hace que el campo ocupe todo el ancho disponible */
+  padding: 10px; /* Espaciado interno dentro del campo */
+  border: 1px solid #ccc; /* Borde gris claro alrededor del campo */
+  border-radius: 4px; /* Bordes redondeados en el campo */
+  margin-bottom: 15px; /* Espacio debajo del campo */
+}
+
+/* Contenedor para alinear el botón y el checkbox en una fila */
+.BotonesYCheckbox {
+  display: flex; /* Usa flexbox para alinear los elementos en una fila */
+  align-items: center; /* Alinea verticalmente los elementos en la fila */
+  gap: 10px; /* Espacio entre el botón y el checkbox */
+  margin-top: 15px; /* Espacio superior para separar del contenido anterior */
+}
+
+/* Estilo del botón dentro de .BotonesYCheckbox */
+.BotonesYCheckbox button[type="submit"] {
+  background-color: #4CAF50; /* Color de fondo verde del botón */
+  color: #fff; /* Color del texto del botón */
+  padding: 10px 20px; /* Espaciado interno del botón */
+  border: none; /* Sin borde alrededor del botón */
+  border-radius: 4px; /* Bordes redondeados en el botón */
+  cursor: pointer; /* Cambia el cursor a una mano al pasar sobre el botón */
+  width: auto; /* Asegura que el botón solo ocupe el espacio necesario */
+}
+
+/* Estilo para el contenedor del checkbox dentro de .BotonesYCheckbox */
+.BotonesYCheckbox .Checkbox {
+  display: flex; /* Usa flexbox para alinear el checkbox y su texto */
+  align-items: center; /* Alinea verticalmente el checkbox y el texto */
+}
+
+/* Espacio entre el checkbox y el texto */
+.BotonesYCheckbox .Checkbox input[type="checkbox"] {
+  margin-left: 80px; /* Espacio a la derecha del checkbox */
+
+}
+
+/* Estilo del enlace para recuperar la contraseña */
+.OlvidasteContra {
+  margin-top: 15px; /* Espacio superior */
+  color: #333; /* Color del texto */
+  text-decoration: none; /* Sin subrayado */
+}
+
+/* Estilo del párrafo */
+.registro {
+  text-align: center; /* Centra el texto del párrafo */
+}
+
+
+
