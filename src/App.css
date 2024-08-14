@@ -11,7 +11,7 @@ body{
 }
 
 .Formulario {
-  font-family: 'Roboto', sans-serif; /* Fuente para el texto */
+  font-family: 'Roboto', sans-serif, system-ui; /* Fuente para el texto */
   display: flex; /* Usa flexbox para organizar los elementos */
   justify-content: center; /* Centra el formulario horizontalmente */
   padding: 30px; /* Espaciado interno del formulario */
