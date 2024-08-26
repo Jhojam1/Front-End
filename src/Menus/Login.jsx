@@ -1,6 +1,7 @@
-import './App.css'
+import './Login.css'
 
-function App() {
+function Login() {
+
     return (
         <>
             <div className="Formulario">
@@ -17,7 +18,7 @@ function App() {
                         <input type="password" id="password" required/>
                     </div>
                     <div className="BotonesYCheckbox">
-                        <button type="submit">Iniciar Sesión</button>
+                        <button type="submit">Sign Up</button>
                         <div className="Checkbox">
                             <label>
                                 <input type="checkbox"/>
@@ -37,4 +38,4 @@ function App() {
     )
 }
 
-export default App
+export default Login
