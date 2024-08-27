@@ -1,0 +1,13 @@
+.menu-bar {
+    height: 86vh;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Aumenta el gap para separar más los botones */
+    font-size: 1rem;
+    position: relative;
+}
+
+.menu-bar .ant-menu-item {
+    margin-bottom: 15px; /* Espacio adicional entre los elementos del menú */
+}
