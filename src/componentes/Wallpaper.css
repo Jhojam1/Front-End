@@ -17,6 +17,8 @@ html, body {
   z-index: 1; /* Asegura que el fondo esté detrás del contenido */
 }
 
+
+
 .content {
   position: relative; /* Posición relativa para que el contenido esté por encima del fondo */
   z-index: 2; /* Asegura que el contenido esté por encima del fondo */

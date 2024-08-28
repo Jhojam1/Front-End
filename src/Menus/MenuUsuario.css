@@ -4,7 +4,7 @@ html, body {
     height: 100%;
 }
 
-.Contenedor {
+.Contenedori {
     display: flex;
     flex-direction: column;
     height: 100vh;

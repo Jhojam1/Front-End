@@ -3,14 +3,12 @@ import {SettingOutlined} from '@ant-design/icons'
 import { RxExit } from "react-icons/rx";
 import { MdCreate } from "react-icons/md";
 import { FaSearch } from "react-icons/fa";
-import './MenuList.css'
+import './HomePage.css'
 
 
-const MenuList = ({darkTheme}) =>{
+const MenuList = () =>{
     return(
-        <Menu theme = {darkTheme ? 'dark' : 'light'}
-              mode = "inline"
-              className='menu-bar'>
+        <Menu className='menu-bar'>
             <Menu.Item key ="crear" icon={<MdCreate />}>
                 Crear PQRS
             </Menu.Item>

@@ -1,30 +1,37 @@
 import './HomePage.css'
-import {Layout} from "antd";
+import { Button, Layout } from "antd";
 import Logo from "./Logo.jsx";
 import MenuList from "./MenuList.jsx";
-import {useState} from "react";
-import ToggleThemeButton from "./ToggleThemeButton.jsx";
+import { MenuUnfoldOutlined, MenuFoldOutlined } from '@ant-design/icons'
+import { useState } from "react";
 
+const { Sider } = Layout;
 
-    const{Header, Sider} = Layout
-function HomePage(){
-    const[darkTheme, setDarkTheme] = useState(true)
-    const toggleTheme =() =>{
-        setDarkTheme(!darkTheme);
-    }
+function HomePage() {
+    const [collapsed, setCollapsed] = useState(false);
 
     return (
         <div className='Contenedor'>
-        <Layout>
-            <Sider theme= {darkTheme ? 'dark'  : 'light'}  className = 'sidebar'>
-                <Logo/>
-                <MenuList darkTheme={darkTheme}/>
-                <ToggleThemeButton darkTheme ={darkTheme}
-                toggleTheme = {toggleTheme}/>
-            </Sider>
-        </Layout>
+            <Layout>
+                <Sider theme='light'
+                    collapsed={collapsed}
+                    collapsible
+                    trigger={null}
+                    className='sidebar'
+                >
+
+                    <Button
+                        type='text'
+                        className='toggle'
+                        onClick={() => setCollapsed(!collapsed)}
+                        icon={collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
+                    />
+                    <Logo/>
+                    <MenuList />
+                </Sider>
+            </Layout>
         </div>
     )
 }
 
-export default HomePage
+export default HomePage;

@@ -3,7 +3,7 @@ import './MenuUsuario.css';
 function ComponenteMenu() {
     return (
         <>
-            <div className='Contenedor'>
+            <div className='Contenedori'>
                 <div className="Titulo">
                     <h1>Menu Usuario</h1>
                 </div>
