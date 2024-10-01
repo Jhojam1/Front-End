@@ -1,14 +1,14 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import Wallpaper from './componentes/Wallpaper.jsx';
-import HomePage from "./componentes/Menu/HomePage.jsx";
-
+import { AppRouter } from '../router/AppRouter.jsx';
+import { BrowserRouter as Router } from 'react-router-dom';
+import '../router/AxiosConfig'
+import '../src/main.css'
 
 createRoot(document.getElementById('root')).render(
     <StrictMode>
-        <Wallpaper />
-        <div className="Contenedor">
-            <HomePage />
-        </div>
+            <Router>
+                <AppRouter />
+            </Router>
     </StrictMode>,
 )
